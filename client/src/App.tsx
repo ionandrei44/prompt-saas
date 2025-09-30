@@ -1,8 +1,26 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
+import LandingPage from "./pages/LandingPage";
+import AppDashboard from "./pages/AppDashboard";
+
 function App() {
   return (
-    <div className="text-3xl font-bold underline text-red-500">
-      Test Tailwind
-    </div>
+    <Router>
+      <div className="min-h-screen">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <LandingPage />
+              </>
+            }
+          />
+          <Route path="/app" element={<AppDashboard />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
