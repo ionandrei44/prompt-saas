@@ -88,13 +88,13 @@ const HeroSection = () => {
               >
                 Start Free
               </Button>
-              <Button
+              {/* <Button
                 size="lg"
                 variant="bordered"
                 className="border-2 border-slate-300 text-slate-700 font-semibold px-8 py-3 text-lg hover:bg-slate-50 transition-all duration-300"
               >
                 Watch Demo
-              </Button>
+              </Button> */}
             </motion.div>
 
             {/* Key Benefits */}

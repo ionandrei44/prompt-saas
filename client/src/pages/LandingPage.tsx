@@ -1,5 +1,5 @@
 import HeroSection from "../components/hero-section/HeroSection";
-import FeaturesSection from "../components/features/FeaturesSection";
+import BenefitsSection from "../components/benefits/BenefitsSection";
 import PricingSection from "../components/pricing/PricingSection";
 import AboutSection from "../components/about/AboutSection";
 import ContactSection from "../components/contact/ContactSection";
@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <div id="hero">
       <HeroSection />
-      <FeaturesSection />
+      <BenefitsSection />
       <PricingSection />
       <AboutSection />
       <ContactSection />
