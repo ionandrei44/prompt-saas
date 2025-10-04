@@ -4,7 +4,7 @@ import HowItWorksSection from "../components/how-it-works/HowItWorksSection";
 import PricingSection from "../components/pricing/PricingSection";
 import FaqSection from "../components/faq/FaqSection";
 import AboutSection from "../components/about/AboutSection";
-import ContactSection from "../components/contact/ContactSection";
+import CtaSection from "../components/cta/CtaSection";
 
 const LandingPage = () => {
   return (
@@ -15,7 +15,7 @@ const LandingPage = () => {
       <PricingSection />
       <FaqSection />
       <AboutSection />
-      <ContactSection />
+      <CtaSection />
     </div>
   );
 };
