@@ -13,7 +13,7 @@ const Logo = ({ onClick }: { onClick: () => void }) => {
         <LightningIcon size={20} weight="bold" className="text-white" />
       </div>
       <span className="text-xl font-bold text-slate-900 select-none">
-        PromptFlow
+        PromptBond
       </span>
     </motion.div>
   );

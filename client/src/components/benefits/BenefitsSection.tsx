@@ -69,7 +69,7 @@ const BenefitsSection = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
             Why Choose{" "}
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-              PromptSaaS
+              PromptBond
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">

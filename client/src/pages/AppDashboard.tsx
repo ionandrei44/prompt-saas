@@ -15,7 +15,7 @@ const AppDashboard = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
               <Lightning size={20} weight="bold" className="text-white" />
             </div>
-            <span className="text-xl font-bold text-slate-900">PromptFlow</span>
+            <span className="text-xl font-bold text-slate-900">PromptBond</span>
           </div>
           <Button
             variant="bordered"

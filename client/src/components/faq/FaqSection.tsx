@@ -4,9 +4,9 @@ import { Container, Section } from "../layout";
 const FaqSection = () => {
   const faqs = [
     {
-      question: "What is PrompTrack?",
+      question: "What is PromptBond?",
       answer:
-        "PrompTrack is a web app that helps you organize, save, and reuse your AI prompts efficiently. You can create folders, categorize prompts, and turn them into reusable templates with variables.",
+        "PromptBond is a web app that helps you organize, save, and reuse your AI prompts efficiently. You can create folders, categorize prompts, and turn them into reusable templates with variables.",
     },
     {
       question: "Who is this app for?",
@@ -21,12 +21,12 @@ const FaqSection = () => {
     {
       question: "Is this app free?",
       answer:
-        "PrompTrack offers a free version with limited features. A paid plan will provide full access, including unlimited prompts, folders, and templates.",
+        "PromptBond offers a free version with limited features. A paid plan will provide full access, including unlimited prompts, folders, and templates.",
     },
     {
       question: "Can I access the app from any device?",
       answer:
-        "Absolutely. PrompTrack is web-based and responsive, so you can use it on your computer, tablet, or mobile browser.",
+        "Absolutely. PromptBond is web-based and responsive, so you can use it on your computer, tablet, or mobile browser.",
     },
   ];
 
