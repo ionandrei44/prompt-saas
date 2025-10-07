@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import Container from "../layout/Container";
 import { GlassCard, GlassButton, Badge } from "../ui";
 import { theme } from "../../styles/theme";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section
       className="relative min-h-screen overflow-hidden flex items-center"
@@ -105,7 +108,11 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
             >
-              <GlassButton variant="primary" size="lg">
+              <GlassButton
+                variant="primary"
+                size="lg"
+                onClick={() => navigate("/dashboard")}
+              >
                 Start Tracking Free
               </GlassButton>
               {/* <GlassButton variant="glass" size="lg">

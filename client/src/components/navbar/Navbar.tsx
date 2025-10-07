@@ -42,7 +42,7 @@ const Navbar = () => {
 
   const handleNavClick = (href: string, isExternal: boolean) => {
     if (isExternal) {
-      navigate("/app");
+      navigate("/dashboard");
     } else {
       const sectionId = href.replace("#", "");
       scrollToSection(sectionId);
@@ -92,10 +92,13 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
-            <GlassButton variant="glass" onClick={() => navigate("/app")}>
+            <GlassButton variant="glass" onClick={() => navigate("/dashboard")}>
               Sign In
             </GlassButton>
-            <GlassButton variant="primary" onClick={() => navigate("/app")}>
+            <GlassButton
+              variant="primary"
+              onClick={() => navigate("/dashboard")}
+            >
               Start Free
             </GlassButton>
           </div>

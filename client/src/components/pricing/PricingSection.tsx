@@ -215,7 +215,7 @@ const PricingSection = () => {
                   variant={plan.popular ? "primary" : "glass"}
                   size="lg"
                   className="w-full"
-                  onClick={() => (window.location.href = "/app")}
+                  onClick={() => (window.location.href = "/dashboard")}
                 >
                   {plan.popular ? "Get Started Now" : "Start Free"}
                 </GlassButton>

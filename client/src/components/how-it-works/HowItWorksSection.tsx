@@ -234,7 +234,7 @@ const HowItWorksSection = () => {
           <GlassButton
             variant="primary"
             size="lg"
-            onClick={() => navigate("/app")}
+            onClick={() => navigate("/dashboard")}
           >
             Start Tracking Your Growth
           </GlassButton>

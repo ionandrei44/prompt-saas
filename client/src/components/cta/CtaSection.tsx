@@ -137,7 +137,7 @@ const CtaSection = () => {
               <GlassButton
                 variant="primary"
                 size="lg"
-                onClick={() => (window.location.href = "/app")}
+                onClick={() => (window.location.href = "/dashboard")}
                 className="group flex flex-row items-center justify-center"
               >
                 <span>Start Tracking Free</span>

@@ -49,7 +49,7 @@ const MobileMenu = ({ isOpen, onClose, onNavClick }: MobileMenuProps) => {
   };
 
   const handleAuthClick = () => {
-    navigate("/app");
+    navigate("/dashboard");
     onClose();
   };
 
