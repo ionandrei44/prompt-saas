@@ -44,7 +44,7 @@ const CtaSection = () => {
         }}
       />
 
-      <Container maxWidth="7xl" className="relative z-10 px-4 sm:px-6 lg:px-8">
+      <Container maxWidth="7xl" className="relative z-10">
         <div className="max-w-5xl mx-auto">
           <GlassCard padding="xl" className="text-center">
             {/* Icon badges */}

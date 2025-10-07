@@ -66,12 +66,12 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Logo onClick={() => scrollToSection("hero")} />
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <button
                 key={link.name}
@@ -91,7 +91,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <GlassButton variant="glass" onClick={() => navigate("/app")}>
               Sign In
             </GlassButton>
@@ -101,7 +101,7 @@ const Navbar = () => {
           </div>
 
           <button
-            className="md:hidden p-2 rounded-lg transition-colors duration-200 cursor-pointer"
+            className="lg:hidden p-2 rounded-lg transition-colors duration-200 cursor-pointer"
             style={{
               color: theme.colors.text.secondary,
               background: theme.effects.glass.background,

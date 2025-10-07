@@ -53,7 +53,7 @@ const HeroSection = () => {
 
       <Container
         maxWidth="7xl"
-        className="relative z-10 w-full px-4 sm:px-6 lg:px-8"
+        className="relative z-10 w-full px-12 sm:px-16 lg:px-20 xl:px-24"
       >
         <div className="flex flex-col lg:flex-row lg:items-center items-center gap-12 lg:gap-16 min-h-screen py-20">
           {/* Left Content */}
@@ -65,7 +65,7 @@ const HeroSection = () => {
           >
             {/* Headline */}
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
               style={{ color: theme.colors.text.primary }}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}

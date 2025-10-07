@@ -88,10 +88,7 @@ const PricingSection = () => {
         }}
       />
 
-      <Container
-        maxWidth="7xl"
-        className="relative z-10 text-center px-4 sm:px-6 lg:px-8"
-      >
+      <Container maxWidth="7xl" className="relative z-10 text-center">
         <motion.div
           className="mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -122,25 +119,19 @@ const PricingSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-8 max-w-7xl mx-auto mb-16">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
-              className="relative"
+              className="relative w-full max-w-[520px] mx-auto lg:max-w-none"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -8 }}
-              style={{
-                marginTop: plan.popular ? "-1.5rem" : "0",
-                marginBottom: plan.popular ? "1.5rem" : "0",
-              }}
             >
               <div
-                className={`h-full rounded-2xl p-8 transition-all duration-300 ${
-                  plan.popular ? "shadow-2xl" : "shadow-lg hover:shadow-2xl"
-                }`}
+                className={`h-full rounded-2xl p-8 transition-all duration-300 shadow-lg hover:shadow-2xl flex flex-col`}
                 style={{
                   background: plan.popular
                     ? `linear-gradient(135deg, ${theme.colors.primary[500]}15 0%, ${theme.colors.secondary[500]}15 100%)`
@@ -149,9 +140,6 @@ const PricingSection = () => {
                   border: plan.popular
                     ? `2px solid ${theme.colors.primary[400]}`
                     : `1px solid ${theme.colors.glass.border}`,
-                  boxShadow: plan.popular
-                    ? `0 0 0 1px ${theme.colors.primary[400]}40, 0 20px 40px -10px ${theme.colors.primary[500]}50, inset 0 1px 0 ${theme.colors.primary[300]}20`
-                    : undefined,
                 }}
               >
                 {plan.popular && (
@@ -202,7 +190,7 @@ const PricingSection = () => {
                   </p>
                 </div>
 
-                <ul className="space-y-4 mb-8">
+                <ul className="space-y-4 mb-8 flex-grow">
                   {plan.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <div
@@ -214,7 +202,7 @@ const PricingSection = () => {
                         <Check size={12} weight="bold" className="text-white" />
                       </div>
                       <span
-                        className="text-sm leading-relaxed"
+                        className="text-sm leading-relaxed text-start"
                         style={{ color: theme.colors.text.secondary }}
                       >
                         {feature}

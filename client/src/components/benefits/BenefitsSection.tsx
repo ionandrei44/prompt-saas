@@ -70,7 +70,7 @@ const BenefitsSection = () => {
       className="relative py-16 sm:py-20 lg:py-24"
       style={{ background: theme.colors.background.primary }}
     >
-      <Container maxWidth="7xl" className="px-4 sm:px-6 lg:px-8">
+      <Container maxWidth="7xl">
         {/* Section Header */}
         <motion.div
           className="text-center mb-12 sm:mb-16"

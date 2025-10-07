@@ -39,7 +39,7 @@ const AboutSection = () => {
         }}
       />
 
-      <Container maxWidth="7xl" className="relative z-10 px-4 sm:px-6 lg:px-8">
+      <Container maxWidth="7xl" className="relative z-10">
         {/* Section Header */}
         <motion.div
           className="text-center mb-20"

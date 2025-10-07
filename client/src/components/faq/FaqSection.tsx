@@ -58,7 +58,7 @@ const FaqSection = () => {
         }}
       />
 
-      <Container maxWidth="2xl" className="relative z-10 px-4 sm:px-6 lg:px-8">
+      <Container maxWidth="2xl" className="relative z-10">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}

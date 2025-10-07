@@ -28,10 +28,10 @@ const Container = ({
 
   const paddingClasses = {
     none: "",
-    sm: "px-4 py-2",
-    md: "px-6 py-4",
-    lg: "px-4 py-8 sm:px-6 lg:px-8",
-    xl: "px-4 py-12 sm:px-6 lg:px-8 xl:py-16",
+    sm: "px-6 py-2 sm:px-8 lg:px-10",
+    md: "px-6 py-4 sm:px-8 lg:px-12",
+    lg: "px-6 py-8 sm:px-8 lg:px-12 xl:px-16",
+    xl: "px-6 py-12 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 xl:py-16",
   };
 
   const containerClasses = `

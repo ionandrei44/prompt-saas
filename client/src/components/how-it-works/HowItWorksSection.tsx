@@ -77,7 +77,10 @@ const HowItWorksSection = () => {
         }}
       />
 
-      <Container maxWidth="7xl" className="relative z-10 px-6 sm:px-8 lg:px-10">
+      <Container
+        maxWidth="7xl"
+        className="relative z-10 px-8 sm:px-10 lg:px-14 xl:px-18"
+      >
         {/* Section Header */}
         <motion.div
           className="text-center mb-12 sm:mb-16 lg:mb-20"
