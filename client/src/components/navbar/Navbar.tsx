@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@heroui/react";
 import { ListIcon } from "@phosphor-icons/react";
 import Logo from "../logo/Logo";
 import MobileMenu from "./MobileMenu";
+import { GlassButton } from "../ui";
+import { theme } from "../../styles/theme";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,10 +33,11 @@ const Navbar = () => {
 
   // Navigation links
   const navLinks = [
-    { name: "Features", href: "#features", isExternal: false },
+    { name: "Benefits", href: "#benefits", isExternal: false },
+    { name: "How It Works", href: "#how-it-works", isExternal: false },
     { name: "Pricing", href: "#pricing", isExternal: false },
+    { name: "FAQ", href: "#faq", isExternal: false },
     { name: "About", href: "#about", isExternal: false },
-    { name: "Contact", href: "#contact", isExternal: false },
   ];
 
   const handleNavClick = (href: string, isExternal: boolean) => {
@@ -49,9 +51,17 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-lg" : "bg-transparent"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out"
+      style={{
+        background: isScrolled ? theme.effects.glass.background : "transparent",
+        backdropFilter: isScrolled
+          ? theme.effects.glass.backdropFilter
+          : "none",
+        borderBottom: isScrolled
+          ? `1px solid ${theme.colors.glass.border}`
+          : "none",
+        boxShadow: isScrolled ? theme.effects.glass.boxShadow : "none",
+      }}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -66,34 +76,36 @@ const Navbar = () => {
               <button
                 key={link.name}
                 onClick={() => handleNavClick(link.href, link.isExternal)}
-                className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 relative group cursor-pointer"
+                className="font-medium transition-colors duration-200 relative group cursor-pointer"
+                style={{ color: theme.colors.text.secondary }}
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 group-hover:w-full" />
+                <span
+                  className="absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full"
+                  style={{
+                    background: `linear-gradient(90deg, ${theme.colors.primary[500]} 0%, ${theme.colors.secondary[500]} 100%)`,
+                  }}
+                />
               </button>
             ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Button
-              variant="bordered"
-              className="border-slate-300 text-slate-700 hover:bg-slate-50 font-medium"
-              onClick={() => navigate("/app")}
-            >
+            <GlassButton variant="glass" onClick={() => navigate("/app")}>
               Sign In
-            </Button>
-            <Button
-              color="primary"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={() => navigate("/app")}
-            >
+            </GlassButton>
+            <GlassButton variant="primary" onClick={() => navigate("/app")}>
               Start Free
-            </Button>
+            </GlassButton>
           </div>
 
           <button
-            className="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors duration-200 cursor-pointer"
+            className="md:hidden p-2 rounded-lg transition-colors duration-200 cursor-pointer"
+            style={{
+              color: theme.colors.text.secondary,
+              background: theme.effects.glass.background,
+            }}
             aria-label="Toggle mobile menu"
             onClick={() => setIsMobileMenuOpen(true)}
           >
