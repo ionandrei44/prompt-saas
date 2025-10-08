@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
-import { Plug, ChartLine, RocketLaunch } from "@phosphor-icons/react";
+import {
+  PlugIcon,
+  ChartLineIcon,
+  RocketLaunchIcon,
+} from "@phosphor-icons/react";
 import { useNavigate } from "react-router-dom";
 import Container from "../layout/Container";
 import { GlassCard, GlassButton } from "../ui";
@@ -16,7 +20,7 @@ interface Step {
 const steps: Step[] = [
   {
     number: "01",
-    icon: <Plug size={32} weight="fill" />,
+    icon: <PlugIcon size={32} weight="fill" />,
     title: "Connect Your Platforms",
     description:
       "Link your GitHub, newsletter provider, analytics, and Product Hunt accounts with secure OAuth.",
@@ -24,7 +28,7 @@ const steps: Step[] = [
   },
   {
     number: "02",
-    icon: <ChartLine size={32} weight="fill" />,
+    icon: <ChartLineIcon size={32} weight="fill" />,
     title: "Watch Your Dashboard Fill Up",
     description:
       "We automatically fetch your metrics and display them in real-time. No manual work required.",
@@ -32,7 +36,7 @@ const steps: Step[] = [
   },
   {
     number: "03",
-    icon: <RocketLaunch size={32} weight="fill" />,
+    icon: <RocketLaunchIcon size={32} weight="fill" />,
     title: "Track Growth & Celebrate Wins",
     description:
       "Monitor trends, hit milestones, and get insights. Stay motivated as you build your indie empire.",

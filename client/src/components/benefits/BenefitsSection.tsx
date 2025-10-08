@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import {
-  ChartLineUp,
-  GitBranch,
-  Gauge,
-  BellRinging,
-  Target,
-  TrendUp,
+  ChartLineUpIcon,
+  GitBranchIcon,
+  GaugeIcon,
+  BellRingingIcon,
+  TargetIcon,
+  TrendUpIcon,
 } from "@phosphor-icons/react";
 import Container from "../layout/Container";
 import { GlassCard } from "../ui";
@@ -20,42 +20,42 @@ interface Benefit {
 
 const benefits: Benefit[] = [
   {
-    icon: <ChartLineUp size={32} weight="fill" />,
+    icon: <ChartLineUpIcon size={32} weight="fill" />,
     title: "Unified Growth View",
     description:
       "See all your metrics from GitHub, newsletters, analytics, and Product Hunt in one beautiful dashboard.",
     color: theme.colors.primary[500],
   },
   {
-    icon: <TrendUp size={32} weight="fill" />,
+    icon: <TrendUpIcon size={32} weight="fill" />,
     title: "Track Progress Over Time",
     description:
       "Visualize your growth with weekly and monthly charts. Watch your indie projects flourish.",
     color: theme.colors.secondary[500],
   },
   {
-    icon: <Target size={32} weight="fill" />,
+    icon: <TargetIcon size={32} weight="fill" />,
     title: "Milestone Achievements",
     description:
       "Celebrate wins with automatic milestones. Hit 100 newsletter subs? 1K GitHub stars? We'll track it.",
     color: theme.colors.accent.emerald,
   },
   {
-    icon: <Gauge size={32} weight="fill" />,
+    icon: <GaugeIcon size={32} weight="fill" />,
     title: "Growth Score",
     description:
       "Get a simple, weighted score that combines all your platforms into one motivating number.",
     color: theme.colors.accent.purple,
   },
   {
-    icon: <GitBranch size={32} weight="fill" />,
+    icon: <GitBranchIcon size={32} weight="fill" />,
     title: "Multiple Platform Support",
     description:
       "Connect GitHub, Google Analytics, Plausible, Product Hunt, newsletters, and more.",
     color: theme.colors.accent.cyan,
   },
   {
-    icon: <BellRinging size={32} weight="fill" />,
+    icon: <BellRingingIcon size={32} weight="fill" />,
     title: "Smart Insights",
     description:
       "Get notified of trends and highlights. 20% growth this month? We'll tell you.",

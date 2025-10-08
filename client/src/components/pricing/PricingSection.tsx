@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Container } from "../layout";
 import { GlassButton, Badge } from "../ui";
 import { theme } from "../../styles/theme";
-import { Check } from "@phosphor-icons/react";
+import { CheckIcon } from "@phosphor-icons/react";
 
 const PricingSection = () => {
   const plans = [
@@ -199,7 +199,11 @@ const PricingSection = () => {
                           background: theme.colors.primary[500],
                         }}
                       >
-                        <Check size={12} weight="bold" className="text-white" />
+                        <CheckIcon
+                          size={12}
+                          weight="bold"
+                          className="text-white"
+                        />
                       </div>
                       <span
                         className="text-sm leading-relaxed text-start"

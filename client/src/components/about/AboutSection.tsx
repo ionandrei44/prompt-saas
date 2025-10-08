@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import { Container } from "../layout";
-import { Lightbulb, Target, TrendUp, Users } from "@phosphor-icons/react";
+import {
+  LightbulbIcon,
+  TargetIcon,
+  TrendUpIcon,
+  UsersIcon,
+} from "@phosphor-icons/react";
 import { GlassCard } from "../ui";
 import { theme } from "../../styles/theme";
 
@@ -86,7 +91,7 @@ const AboutSection = () => {
                 background: `linear-gradient(135deg, ${theme.colors.primary[500]}20 0%, ${theme.colors.secondary[500]}20 100%)`,
               }}
             >
-              <Lightbulb
+              <LightbulbIcon
                 size={48}
                 weight="fill"
                 style={{ color: theme.colors.secondary[400] }}
@@ -126,21 +131,21 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
             {
-              icon: <Target size={32} weight="fill" />,
+              icon: <TargetIcon size={32} weight="fill" />,
               title: "Our Mission",
               description:
                 "Empower indie developers with simple, beautiful growth tracking that keeps them motivated through every milestone.",
               color: theme.colors.primary[500],
             },
             {
-              icon: <TrendUp size={32} weight="fill" />,
+              icon: <TrendUpIcon size={32} weight="fill" />,
               title: "Our Vision",
               description:
                 "Become the go-to growth dashboard for indie makers worldwide, celebrating every win big or small.",
               color: theme.colors.secondary[500],
             },
             {
-              icon: <Users size={32} weight="fill" />,
+              icon: <UsersIcon size={32} weight="fill" />,
               title: "Our Community",
               description:
                 "Built by indie devs for indie devs. Join thousands of makers tracking their journey to success.",

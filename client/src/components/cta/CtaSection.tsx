@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { Container } from "../layout";
 import {
-  ArrowRight,
-  GithubLogo,
-  ChartLine,
-  Sparkle,
+  ArrowRightIcon,
+  GithubLogoIcon,
+  ChartLineIcon,
+  SparkleIcon,
 } from "@phosphor-icons/react";
 import { GlassButton, GlassCard } from "../ui";
 import { theme } from "../../styles/theme";
@@ -57,15 +57,15 @@ const CtaSection = () => {
             >
               {[
                 {
-                  icon: <GithubLogo size={24} weight="fill" />,
+                  icon: <GithubLogoIcon size={24} weight="fill" />,
                   color: theme.colors.primary[500],
                 },
                 {
-                  icon: <ChartLine size={24} weight="fill" />,
+                  icon: <ChartLineIcon size={24} weight="fill" />,
                   color: theme.colors.secondary[500],
                 },
                 {
-                  icon: <Sparkle size={24} weight="fill" />,
+                  icon: <SparkleIcon size={24} weight="fill" />,
                   color: theme.colors.accent.purple,
                 },
               ].map((item, index) => (
@@ -141,7 +141,7 @@ const CtaSection = () => {
                 className="group flex flex-row items-center justify-center"
               >
                 <span>Start Tracking Free</span>
-                <ArrowRight
+                <ArrowRightIcon
                   size={20}
                   weight="bold"
                   className="ml-2 group-hover:translate-x-1 transition-transform duration-200"
