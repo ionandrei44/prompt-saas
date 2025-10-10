@@ -10,3 +10,4 @@ export { default as MetricCard } from "./MetricCard";
 export { default as InsightsPanel } from "./InsightsPanel";
 export { default as GitHubCard } from "./GitHubCard";
 export { default as TwitterCard } from "./TwitterCard";
+export { UserMenu } from "./UserMenu";

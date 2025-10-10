@@ -1,5 +1,6 @@
 import { theme } from "../../styles/theme";
 import DateRangePicker from "./DateRangePicker";
+import { UserMenu } from "./UserMenu";
 
 const TopBar = () => {
   return (
@@ -17,20 +18,7 @@ const TopBar = () => {
 
       {/* Right side - User Menu */}
       <div className="flex items-center gap-4">
-        {/* User Menu */}
-        <div
-          className="flex items-center gap-3 pl-4 border-l"
-          style={{ borderColor: theme.colors.glass.border }}
-        >
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
-            <span
-              className="text-sm font-bold"
-              style={{ color: theme.colors.text.primary }}
-            >
-              A
-            </span>
-          </div>
-        </div>
+        <UserMenu />
       </div>
     </header>
   );
